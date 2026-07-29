@@ -10,3 +10,6 @@ goodix_core-y := \
 				goodix_ts_gesture.o \
 				goodix_ts_inspect.o \
 				goodix_ts_tools.o
+
+CFLAGS_goodix_brl_hw.o += -Wframe-larger-than=4096
+CFLAGS_goodix_ts_inspect.o += -Wframe-larger-than=4096
